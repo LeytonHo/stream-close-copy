@@ -55,7 +55,7 @@ const HelpStyle = styled.p`
 
 export const NavigationBar = () => (
     <Styles>
-       <Navbar expand="lg">
+       <Navbar>
            <LeftContain>
                 <Navbar.Brand href="https://app.joinstream.io/dashboard">
                     <img src={StreamLogo} alt="Stream Logo" />
@@ -63,12 +63,10 @@ export const NavigationBar = () => (
             </LeftContain>
            <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
            <RightContain>
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ml-auto">
-                        <Nav.Item><Nav.Link href="/"><HelpStyle>Help</HelpStyle></Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link href="/"><img src={Profile} alt="Profile" /></Nav.Link></Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
+                <Nav className="ml-auto">
+                    <Nav.Item><Nav.Link href="/"><HelpStyle>Help</HelpStyle></Nav.Link></Nav.Item>
+                    <Nav.Item><Nav.Link href="/"><img src={Profile} alt="Profile" /></Nav.Link></Nav.Item>
+                </Nav>
            </RightContain>
        </Navbar>
     </Styles>
