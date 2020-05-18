@@ -5,6 +5,11 @@ const DescContainer = styled.div`
     display: flex;
     flex-direction: row;
     margin-top: 70px;
+
+    @media (max-width: 786px) {
+        flex-direction: column;
+        margin-top: 40px;
+    }
 `;
 
 const DescTextContainer = styled.div`
@@ -16,6 +21,11 @@ const DescTextContainer = styled.div`
     border-bottom-color: rgba(0, 0, 0, 0.1);
     margin-top: 5px;
     padding-bottom: 30px;
+
+    @media (max-width: 786px) {
+        margin-top: 15px;
+        width: 100%;
+    }
 `;
 
 const AboutTitle = styled.p`

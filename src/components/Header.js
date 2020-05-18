@@ -8,6 +8,10 @@ const HeaderContainer = styled.div`
 
 const LeftHeader = styled.div`
     width: 75%;
+
+    @media (max-width: 786px) {
+        width: 100%
+    }
 `;
 
 const Date = styled.p`
@@ -30,7 +34,6 @@ const EventTitle = styled.div`
 const NameContainer = styled.div`
     display: flex;
     flex-direction: row;
-    -webkit-box-align: center;
     align-items: center;
 `;
 
@@ -46,6 +49,10 @@ const RightHeader = styled.div`
     width: 25%;
     text-align: right;
     display: block;
+
+    @media (max-width: 786px) {
+        display: none;
+    }
 `;
 
 const Price = styled.h3`

@@ -8,6 +8,10 @@ const AvatarContainer = styled.div`
     align-items: flex-start;
     width: 800px;
     z-index: 102;
+    
+    @media (max-width: 786px) {
+        width: 92%
+    }
 `;
 
 const AvatarBox = styled.div`

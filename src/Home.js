@@ -32,6 +32,11 @@ const BodyContainer = styled.div`
     width: 720px;
     flex-direction: column;
     padding: 20px 10px;
+
+    @media (max-width: 786px) {
+        padding-top: 20px;
+        width: 92%
+    }
 `;
 
 export const Home = () => (
