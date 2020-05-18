@@ -1,13 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const InfoContainer = styled.div`
-    display: flex;
-    width: 720px;
-    flex-direction: column;
-    padding: 20px 10px;
-`;
-
 const HeaderContainer = styled.div`
     display: flex;
     flex-direction: row;
@@ -68,20 +61,18 @@ const PriceDesc = styled.p`
     margin: 0px;
 `;
 
-export const Info = () => (
-    <InfoContainer>
-        <HeaderContainer>
-            <LeftHeader>
-                <Date>No stream scheduled</Date>
-                <EventTitle>How to GIF with Figma <span role="img" aria-label="sparkle">✨</span></EventTitle>
-                <NameContainer>
-                    <Name>by Andréas Blondeau</Name>
-                </NameContainer>
-            </LeftHeader>
-            <RightHeader>
-                <Price>$1.99</Price>
-                <PriceDesc>to join</PriceDesc>
-            </RightHeader>
-        </HeaderContainer>
-    </InfoContainer>
+export const Header = () => (
+    <HeaderContainer>
+        <LeftHeader>
+            <Date>No stream scheduled</Date>
+            <EventTitle>How to GIF with Figma <span role="img" aria-label="sparkle">✨</span></EventTitle>
+            <NameContainer>
+                <Name>by Andréas Blondeau</Name>
+            </NameContainer>
+        </LeftHeader>
+        <RightHeader>
+            <Price>$1.99</Price>
+            <PriceDesc>to join</PriceDesc>
+        </RightHeader>
+    </HeaderContainer>
 )
