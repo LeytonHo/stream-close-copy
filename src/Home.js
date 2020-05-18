@@ -19,7 +19,7 @@ const InputDate = "No stream scheduled";
 const AdditionalInfo = 'https://app.joinstream.io/u/e98f8';
 const Title = (
     <p>
-        How to GIF with Figma <span role="img" aria-label="sparkle">✨</span>
+        How to GIF with Figma <Emoji symbol="✨" label="sparkle" />
     </p>
 )
 
