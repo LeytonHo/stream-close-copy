@@ -42,11 +42,11 @@ const ButtonLink = styled.a`
     }
 `;
 
-export const MoreButton = () => (
+export const MoreButton = (props) => (
     <AdditionalEvents>
-        <ButtonLink href='https://app.joinstream.io/u/e98f8'>
+        <ButtonLink href={props.src}>
             <Button>
-                <ButtonText>More events by Andréas Blondeau</ButtonText>
+                <ButtonText>More events by {props.name}</ButtonText>
             </Button>
         </ButtonLink>
     </AdditionalEvents>

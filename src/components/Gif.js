@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import StreamGif from "../assets/stream_gif.gif";
 
 const GifContainer = styled.div`
     display: flex;
@@ -32,13 +31,13 @@ const SolidGif = styled.img`
     overflow: hidden;
 `;
 
-export const Gif = () => (
+export const Gif = (props) => (
     <GifContainer>
         <BlurLayer>
-            <img width="100%" src={StreamGif} alt="Stream Gif" style={{filter: `blur(20px)`}}/> 
+            <img width="100%" src={props.src} alt="Stream Gif" style={{filter: `blur(20px)`}}/> 
         </BlurLayer>
         <GifLayer>
-            <SolidGif src={StreamGif} alt="Stream Gif"/>
+            <SolidGif src={props.src} alt="Stream Gif"/>
         </GifLayer> 
     </GifContainer>
 )

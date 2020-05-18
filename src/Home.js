@@ -1,52 +1,69 @@
 import React from 'react'
-import styled from 'styled-components';
+import { Landing, Backdrop, Body, Date, Event, Name, NameText, Link} from './page-styling/home-styled';
 import { Gif } from './components/Gif';
 import { Avatar } from './components/Avatar';
 import { Header } from './components/Header';
 import { Description } from './components/Description';
 import { MoreButton } from './components/MoreButton';
-import Backdrop from './assets/images/backdrop.svg';
+import BackdropImage from './assets/images/backdrop.svg';
+import AvatarImage from './assets/images/avatar.png';
+import StreamGif from "./assets/stream_gif.gif";
+import Emoji from './components/Emoji';
 
-const LandingContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    align-items: center;
-    width: 100%;
-    min-height: 100%;
-    padding-bottom: 100px;
-    background-color: rgb(255, 255, 255);
-`;
+// There is likely a better way to pass text as props and organize styling
+// On the site, I'm assuming the below constants would be passed in after backend handling 
 
-const BackdropStyled = styled.img`
-    position: absolute;
-    bottom: -70px;
-    right: 10%;
-    z-index: 100;
-    opacity: 0.5;
-`;
+const Andreas = "Andréas Blondeau";
+const Cost = "$1.99";
+const InputDate = "No stream scheduled";
+const Title = (
+    <p>
+        How to GIF with Figma <span role="img" aria-label="sparkle">✨</span>
+    </p>
+)
 
-const BodyContainer = styled.div`
-    display: flex;
-    width: 720px;
-    flex-direction: column;
-    padding: 20px 10px;
+const AboutEvent = (
+    <p>
+       During this 45 minutes class, we are going to learn how to create a GIF using Figma. 
+       This class is addressed to makers, designers, and marketers who want to learn how to 
+       create stunning GIFs for their Product Hunt launch. <Emoji symbol="⚡️" label="bolt"/>
+       The lesson costs symbolically the price of a coffee <Emoji symbol="☕️" label="coffee"/>
+       <Emoji symbol="✌️" label="peace"/>
+        <br />
+        <br />
+        Event link: <Link href="https://app.joinstream.io/how-to-gif-with-figma">https://app.joinstream.io/how-to-gif-with-figma</Link>
+        <br /> 
+    </p>
+)
 
-    @media (max-width: 786px) {
-        padding-top: 20px;
-        width: 92%
-    }
-`;
+const AboutHost = (
+    <p>
+        I am Andréas, founder of <Emoji symbol="🍋" label="citrus"/> Citron 
+        (<Link href="https://getcitron.com">https://getcitron.com</Link>) a solution that 
+        makes it easy for entrepreneurs to get started with accounting. I have studied 
+        design and engineering at UC Berkeley and at Ecole des Ponts. I have a passion for tech 
+        entrepreneurship and enjoy dedicating some of my personal time to transfer some skills 
+        to passionated makers.
+        <br />
+    </p>
+)
+
 
 export const Home = () => (
-    <LandingContainer>
-        <Gif />
-        <BackdropStyled src={Backdrop} alt="Backdrop" />
-        <Avatar />
-        <BodyContainer>
-            <Header />
-            <Description />
-        </BodyContainer>
-        <MoreButton />
-    </LandingContainer>
+    <Landing>
+        <Gif src={StreamGif}/>
+        <Backdrop src={BackdropImage} alt="Backdrop" />
+        <Avatar src={AvatarImage}/>
+        <Body>
+            <Header price={Cost}>
+                <Date>{InputDate}</Date>
+                <Event>{Title}</Event>
+                <Name>
+                    <NameText>by {Andreas}</NameText>
+                </Name>
+            </Header>
+            <Description event={AboutEvent} host={AboutHost}/>
+        </Body>
+        <MoreButton src='https://app.joinstream.io/u/e98f8' name={Andreas} />
+    </Landing>
 )

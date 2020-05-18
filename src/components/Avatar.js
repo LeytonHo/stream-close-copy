@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components';
-import AvatarImage from '../assets/images/avatar.png';
 
 const AvatarContainer = styled.div`
     display: flex;
@@ -35,10 +34,10 @@ const AvatarStyled = styled.img`
     overflow: hidden;
 `;
 
-export const Avatar = () => (
+export const Avatar = (props) => (
     <AvatarContainer>
         <AvatarBox>
-            <AvatarStyled src={AvatarImage} />
+            <AvatarStyled src={props.src} />
         </AvatarBox>
     </AvatarContainer>
 )
