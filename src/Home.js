@@ -1,48 +1,37 @@
 import React from 'react'
 import styled from 'styled-components';
-import StreamGif from "./assets/stream_gif.gif";
+import { Gif } from './components/Gif';
+import { Avatar } from './components/Avatar';
+import { Info } from './components/Info';
+import { Description } from './components/Description';
+import Backdrop from './assets/backdrop.svg';
 
-const GifContainer = styled.div`
+const LandingContainer = styled.div`
     display: flex;
-    width: 100%;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.08);
-    -webkit-box-pack: center;
-    justify-content: center;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-    overflow: hidden;
-`;
-
-const BlurLayer = styled.div`
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: none;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-`;
-
-const GifLayer = styled.div`
+    flex-direction: column;
     position: absolute;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    padding-bottom: 100px;
+    background-color: rgb(255, 255, 255);
 `;
 
-const SolidGif = styled.img`
-    object-fit: contain;
-    width: 400px;
-    height: 400px;
-    flex: 1 1 0%;
-    overflow: hidden;
+const BackdropStyled = styled.img`
+    position: absolute;
+    bottom: -70px;
+    right: 10%;
+    z-index: 100;
+    opacity: 0.5;
 `;
 
 export const Home = () => (
-    <div>
-        <GifContainer>
-            <BlurLayer>
-                <img width="100%" src={StreamGif} alt="Stream Gif" style={{filter: `blur(20px)`}}/> 
-            </BlurLayer>
-            <GifLayer>
-                <SolidGif src={StreamGif} />
-            </GifLayer> 
-        </GifContainer>
-    </div>
+    <LandingContainer>
+        <Gif />
+        <BackdropStyled src={Backdrop} alt="Backdrop" />
+        <Avatar />
+        <Info />
+        <Description />
+    </LandingContainer>
 )

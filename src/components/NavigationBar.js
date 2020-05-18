@@ -5,6 +5,9 @@ import StreamLogo from '../assets/stream-green.svg'
 import Profile from '../assets/creator-profile.svg'
 
 const Styles = styled.div`
+    width: 100%;
+    height: 64px;
+    
     .navbar {
         position: fixed;
         display: flex;
