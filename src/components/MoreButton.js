@@ -7,6 +7,7 @@ const AdditionalEvents = styled.div`
     margin-top: 20px;
     width: auto;
     cursor: pointer;
+    z-index: 102;
 `;
 
 const Button = styled.button`

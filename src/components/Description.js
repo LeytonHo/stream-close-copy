@@ -61,7 +61,6 @@ export const Description = () => (
         <DescContainer>
             <AboutTitle>About this event</AboutTitle>
             <DescTextContainer>
-                <React.Fragment>
                 <AboutDesc>
                     During this 45 minutes class, we are going to learn how to create a GIF using Figma. 
                     This class is addressed to makers, designers, and marketers who want to learn how to 
@@ -73,13 +72,11 @@ export const Description = () => (
                     Event link: <Link href="https://app.joinstream.io/how-to-gif-with-figma">https://app.joinstream.io/how-to-gif-with-figma</Link>
                     <br />
                 </AboutDesc>
-                </React.Fragment>
             </DescTextContainer>
         </DescContainer>
         <DescContainer>
         <AboutTitle>About the host</AboutTitle>
             <DescTextContainer>
-                <React.Fragment>
                 <AboutDesc>
                     I am Andréas, founder of <Emoji symbol="🍋" label="citrus"/> Citron 
                     (<Link href="https://getcitron.com">https://getcitron.com</Link>) a solution that 
@@ -89,7 +86,6 @@ export const Description = () => (
                     to passionated makers.
                     <br />
                 </AboutDesc>
-                </React.Fragment>
             </DescTextContainer> 
         </DescContainer>
     </>
