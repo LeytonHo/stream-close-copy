@@ -16,6 +16,7 @@ import Emoji from './components/Emoji';
 const Andreas = "Andréas Blondeau";
 const Cost = "$1.99";
 const InputDate = "No stream scheduled";
+const AdditionalInfo = 'https://app.joinstream.io/u/e98f8';
 const Title = (
     <p>
         How to GIF with Figma <span role="img" aria-label="sparkle">✨</span>
@@ -64,6 +65,6 @@ export const Home = () => (
             </Header>
             <Description event={AboutEvent} host={AboutHost}/>
         </Body>
-        <MoreButton src='https://app.joinstream.io/u/e98f8' name={Andreas} />
+        <MoreButton src={AdditionalInfo} name={Andreas} />
     </Landing>
 )
