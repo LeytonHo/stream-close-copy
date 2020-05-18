@@ -1,12 +1,24 @@
 import React from 'react';
-import { Nav, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
 import StreamLogo from '../assets/stream-green.svg'
 import Profile from '../assets/creator-profile.svg'
 
 const Styles = styled.div`
     .navbar {
-        background-color: #ffffff;
+        position: fixed;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        width: 100%;
+        height: 64px;
+        background-color: rgb(255, 255, 255);
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        z-index: 1000;
+        border-color: rgb(239, 239, 239);
+        border-width: 1px;
+        border-style: solid;
     }
 
     .navbar-brand, .navbar-nav .nav-link {
@@ -18,19 +30,46 @@ const Styles = styled.div`
     }
 `;
 
+const RightContain = styled.div`
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 5%;
+`;
+
+const LeftContain = styled.div`
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: 5%;
+`;
+
+const HelpStyle = styled.p`
+    font-family: HelveticaNeue;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 0px 10px;
+`;
+
 export const NavigationBar = () => (
     <Styles>
        <Navbar expand="lg">
-           <Navbar.Brand href="https://app.joinstream.io/dashboard">
-               <img src={StreamLogo} alt="Stream Logo" />
-            </Navbar.Brand>
+           <LeftContain>
+                <Navbar.Brand href="https://app.joinstream.io/dashboard">
+                    <img src={StreamLogo} alt="Stream Logo" />
+                </Navbar.Brand>
+            </LeftContain>
            <Navbar.Toggle aria-controls="basic-navbar-nav"></Navbar.Toggle>
-           <Navbar.Collapse id="basic-navbar-nav">
-               <Nav className="ml-auto">
-                   <Nav.Item><Nav.Link href="/">Help</Nav.Link></Nav.Item>
-                   <Nav.Item><Nav.Link href="/"><img src={Profile} alt="Profile" /></Nav.Link></Nav.Item>
-               </Nav>
-           </Navbar.Collapse>
+           <RightContain>
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="ml-auto">
+                        <Nav.Item><Nav.Link href="/"><HelpStyle>Help</HelpStyle></Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link href="/"><img src={Profile} alt="Profile" /></Nav.Link></Nav.Item>
+                    </Nav>
+                </Navbar.Collapse>
+           </RightContain>
        </Navbar>
     </Styles>
 )

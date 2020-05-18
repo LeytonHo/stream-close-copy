@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="463px" height="675px" viewBox="0 0 463 675" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M123.535898,0.936303593 C190.914638,0.936303593 245.535898,55.5575641 245.535898,122.936304 L245.535898,244.936304 L245.535898,244.936304 L123.535898,244.936304 C56.1571589,244.936304 1.53589838,190.315043 1.53589838,122.936304 C1.53589838,55.5575641 56.1571589,0.936303593 123.535898,0.936303593 Z" id="path-1"></path>
+        <filter x="-73.8%" y="-61.5%" width="198.4%" height="186.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-80" dy="-50" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.223217743   0 0 0 0 0.266702591   0 0 0 0 0.440641984  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M122.841633,296.138807 C190.220372,296.138807 244.841633,350.760067 244.841633,418.138807 L244.841633,540.138807 L244.841633,540.138807 L122.841633,540.138807 C55.4628933,540.138807 0.841632741,485.517546 0.841632741,418.138807 C0.841632741,350.760067 55.4628933,296.138807 122.841633,296.138807 Z" id="path-3"></path>
+        <filter x="-73.8%" y="-61.5%" width="198.4%" height="186.1%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-80" dy="-50" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="20" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.223217743   0 0 0 0 0.266702591   0 0 0 0 0.440641984  0 0 0 0.06 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-copy-5" transform="translate(-750.000000, -225.000000)">
+            <g id="Group" transform="translate(981.000000, 608.500000) rotate(-30.000000) translate(-981.000000, -608.500000) translate(858.000000, 338.000000)">
+                <g id="Rectangle-Copy-263" opacity="0.2" transform="translate(123.535898, 122.936304) rotate(-270.000000) translate(-123.535898, -122.936304) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#1FBA90" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Rectangle-Copy-264" opacity="0.3" transform="translate(122.841633, 418.138807) rotate(-90.000000) translate(-122.841633, -418.138807) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#9FDBEF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
