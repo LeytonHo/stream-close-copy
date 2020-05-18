@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Emoji from './Emoji';
 
 const DescContainer = styled.div`
     display: flex;
@@ -64,8 +65,9 @@ export const Description = () => (
                 <AboutDesc>
                     During this 45 minutes class, we are going to learn how to create a GIF using Figma. 
                     This class is addressed to makers, designers, and marketers who want to learn how to 
-                    create stunning GIFs for their Product Hunt launch. ⚡️ The lesson costs symbolically 
-                    the price of a coffee ☕️✌️
+                    create stunning GIFs for their Product Hunt launch. <Emoji symbol="⚡️" label="bolt"/>
+                    The lesson costs symbolically the price of a coffee <Emoji symbol="☕️" label="coffee"/>
+                    <Emoji symbol="✌️" label="peace"/>
                     <br />
                     <br />
                     Event link: <Link href="https://app.joinstream.io/how-to-gif-with-figma">https://app.joinstream.io/how-to-gif-with-figma</Link>
@@ -79,8 +81,9 @@ export const Description = () => (
             <DescTextContainer>
                 <React.Fragment>
                 <AboutDesc>
-                    I am Andréas, founder of 🍋 Citron (<Link href="https://getcitron.com">https://getcitron.com</Link>) 
-                    a solution that makes it easy for entrepreneurs to get started with accounting. I have studied 
+                    I am Andréas, founder of <Emoji symbol="🍋" label="citrus"/> Citron 
+                    (<Link href="https://getcitron.com">https://getcitron.com</Link>) a solution that 
+                    makes it easy for entrepreneurs to get started with accounting. I have studied 
                     design and engineering at UC Berkeley and at Ecole des Ponts. I have a passion for tech 
                     entrepreneurship and enjoy dedicating some of my personal time to transfer some skills 
                     to passionated makers.

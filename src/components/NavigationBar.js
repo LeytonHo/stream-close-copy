@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import StreamLogo from '../assets/stream-green.svg'
-import Profile from '../assets/creator-profile.svg'
+import StreamLogo from '../assets/images/stream-green.svg'
+import Profile from '../assets/images/creator-profile.svg'
 
 const Navbar = styled.div`
     position: relative;

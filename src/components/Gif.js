@@ -7,7 +7,6 @@ const GifContainer = styled.div`
     width: 100%;
     height: 400px;
     background-color: rgba(0, 0, 0, 0.08);
-    -webkit-box-pack: center;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
     overflow: hidden;
@@ -18,7 +17,6 @@ const BlurLayer = styled.div`
     display: block;
     width: 100%;
     max-width: none;
-    -webkit-box-flex: 1;
     flex-grow: 1;
 `;
 

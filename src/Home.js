@@ -5,13 +5,12 @@ import { Avatar } from './components/Avatar';
 import { Header } from './components/Header';
 import { Description } from './components/Description';
 import { MoreButton } from './components/MoreButton';
-import Backdrop from './assets/backdrop.svg';
+import Backdrop from './assets/images/backdrop.svg';
 
 const LandingContainer = styled.div`
     display: flex;
     flex-direction: column;
     position: absolute;
-    -webkit-box-align: center;
     align-items: center;
     width: 100%;
     min-height: 100%;
